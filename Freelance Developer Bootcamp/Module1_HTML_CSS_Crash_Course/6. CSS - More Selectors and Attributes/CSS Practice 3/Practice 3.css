@@ -38,15 +38,16 @@ ul {
         ☑️ Set the transition to .2s ease all BOTH DIRECTIONS (hint, also on non-pseudo selector)
 */
 
-ol {
-    transition: .2s ease all;
+ol li {
+    opacity: 1;
+    transition: .5s ease all;
 }
 
 
 ol li:hover {
     cursor: pointer;
     opacity: .6;
-    transition: .2s ease all;
+    transition: .5s ease all;
 }
 
 /*
