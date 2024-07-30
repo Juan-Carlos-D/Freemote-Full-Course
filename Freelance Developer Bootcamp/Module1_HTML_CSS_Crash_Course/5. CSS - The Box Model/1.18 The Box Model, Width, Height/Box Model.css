@@ -1,0 +1,16 @@
+* {
+    border: 1px solid black;
+}
+
+div {
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+h1 {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    min-width: 315px;
+    background-color: skyblue;
+}
