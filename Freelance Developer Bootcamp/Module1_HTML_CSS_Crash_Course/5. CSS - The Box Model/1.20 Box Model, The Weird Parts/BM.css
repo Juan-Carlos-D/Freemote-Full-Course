@@ -1,0 +1,13 @@
+
+div {
+    background-color: cornflowerblue;
+}
+
+h1 {
+    border: 1px solid black;
+    width: 50%;
+    padding: 10vh 20vw;
+    margin: 20px;
+    background-color: skyblue;
+    box-sizing: border-box
+}
