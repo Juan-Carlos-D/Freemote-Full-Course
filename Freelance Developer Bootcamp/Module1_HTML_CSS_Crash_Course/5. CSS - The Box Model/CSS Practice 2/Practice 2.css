@@ -6,6 +6,10 @@
         ☑️ center the h1 text
 */
 
+h1 {
+    text-align: center;
+}
+
 /*
     > Create a selector for the "box" class and add the following CSS
         ☑️ center the text inside the boxes 
@@ -13,19 +17,36 @@
         ☑️ top and bottom padding 20px, left and right 10px
         ☑️ 20px margin on all 4 sides
 */
-
+.box {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px 10px;
+    margin: 20px;
+}
 /*
     > Now, create selectors for each individual box class (ex "box-1")
         ☑️ make box 1 a nice shade of blue
         ☑️ make box 2 a nice shade of red
         ☑️ make box 3 a nice shade of green
 */
+.box-1 {
+    background-color: #6495EC;
+}
 
+.box-2 {
+    background-color:#CD5C5B;
+}
+
+.box-3{
+    background-color: #2E8B58;
+}
 /*
     > Add some margin on the "container" class
         ☑️ Try 10vw!
 */
-
+.container {
+    margin: 10vw;
+}
 /*
     > Finally, scroll down to check the solution image below, to see if yours matches
 */
