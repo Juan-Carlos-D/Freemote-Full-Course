@@ -1,0 +1,52 @@
+h1 {
+    color: skyblue;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+input:focus {
+    background-color: aqua;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    margin: 10px;
+}
+
+.box:nth-child(2) {
+    background-color: burlywood;
+}
+
+.box:nth-child(3) {
+    background-color: rgb(222, 135, 196);
+}
+
+.box:nth-child(4) {
+    background-color: rgb(195, 135, 222);
+}
+
+.box:first-of-type {
+    background-color: cadetblue;
+}
+
+.box:first-of-type:hover {
+    background-color: crimson;
+    transform: translateX(70px)
+}
+
+.box:first-of-type::before {
+    content: "Hello";
+}
+
+ul {
+    list-style-type: none;
+}
+
+li::before {
+    content: '✅'
+}
