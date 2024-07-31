@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body, html {
+    min-width: 100%;
+    min-height: 100vh;
+}
+
 #entire-container {
     display: flex;
     justify-content: center;
@@ -14,11 +19,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    min-height: 10vh;
     width: 100%;
     background-color: rgb(158, 158, 255);
+    padding: 20px ;
 }
 
 #logo {
-    margin: 0;
+    margin: auto;
+    display: block;
 }
