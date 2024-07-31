@@ -7,7 +7,10 @@
     First let's "clear" the default margin and padding from everything
     (HINT: * selector)
 */
-
+* {
+    margin: 0;
+    padding: 0;
+}
 /*
     > Now, let's style the "hero" class with the following properties
         ☑️ set a height of 30vh, width of 100%
@@ -17,10 +20,23 @@ as the background
 
         ☑️ Set background-size so the width fits 100%, and background-position as center
     .*/
+.hero {
+    height: 30vh;
+    width: 100%;
+    background-image: url('https://assets.codepen.io/6060109/window.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
     /* 
         ☑️ style the H4 text, use the POSITION: absolute, top, and left properties to position the text "How to use flex box" so it fits inside the window! 
     */
+h4 {
+    position: absolute;
+    top: 13%;
+    left: 47%;
+}
+
 
     /*
     > Ok let's...
@@ -28,6 +44,17 @@ as the background
         ☑️ style ALL "box-ctr"s with display flex, height 15vh, width 100%, background color lightgrey
     */
 
+.section {
+    text-align: center;
+    margin: 50px;
+}
+
+.box-ctr {
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background-color: lightgray;
+}
 
     /*
     > Third, let's style the "box" class
@@ -35,7 +62,22 @@ as the background
         ☑️ write 3 advanced selectors, the 1st should select the 1st box inside each box-ctr, the 2nd selects the 2nd... etc
         ☑️ using these, make first box in every container red, second green, third blue
     */
+.box {
+    width: 5%;
+    height: 30%;
+    border: 1px solid black;
+}
 
+.box:nth-of-type(1) {
+    background: red;
+}
+
+.box:nth-of-type(2) {
+    background: green;
+}
+.box:nth-of-type(3) {
+    background: blue;
+}
 
     /*
     > Last, let's style each of the box containers INDIVIDUALLY
@@ -55,3 +97,18 @@ as the background
     HINT: use justify-content and align-items on each box-ctr class
     (use .box-ctr-1, .box-ctr-2...)
 */
+
+.box-ctr-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.box-ctr-2 {
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.box-ctr-3 {
+    flex-direction: column;
+    align-items: flex-end;
+}
