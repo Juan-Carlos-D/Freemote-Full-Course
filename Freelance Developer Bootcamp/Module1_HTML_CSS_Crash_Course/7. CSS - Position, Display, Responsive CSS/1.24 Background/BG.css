@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15%;
+}
+
+#hero {
+
+    background: center/cover url('mountain.jpg');
+    background-repeat: no-repeat;
+    height: 250px;
+}
