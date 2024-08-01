@@ -54,27 +54,31 @@ body, html {
 }
 
 .content-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 40px;
-    background: rgb(189, 189, 189);
+    padding: 30px 30px 0;
+    /* background: rgb(189, 189, 189); */
     width: 100%;
 }
 
-h1 {
+h2 {
     font-size: 48px;
-    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-.content-section span {
+.content-section h2:nth-of-type(1) {
     color: #CD3A24;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+h2:nth-of-type(2) {
+    color: #423A3A;
 }
 
 p {
     font-size: 14px;
+    line-height: 28px;
+    color: #333333;
+    margin: 20px 0 40px;
 }
