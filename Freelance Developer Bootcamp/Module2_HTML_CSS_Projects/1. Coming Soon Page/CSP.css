@@ -82,3 +82,35 @@ p {
     color: #333333;
     margin: 20px 0 40px;
 }
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #333333; */
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+}
+
+input[type="email"] {
+    width: 75%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 20%;
+    height: 50px;
+    box-sizing: border-box;
+    background: rgb(124,124,124);
+    background: linear-gradient(90deg, rgba(124,124,124,1) 0%, rgba(124,124,124,1) 0%, rgba(43,40,40,1) 100%);
+    font-weight:400;
+    font-size:40px;
+    color: white;
+    border:none; 
+}
