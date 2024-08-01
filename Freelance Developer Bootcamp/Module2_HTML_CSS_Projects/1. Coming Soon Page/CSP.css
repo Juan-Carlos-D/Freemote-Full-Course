@@ -24,6 +24,10 @@ body, html {
     font-family:AdiHaus;
 }
 
+body {
+    display: flex;
+}
+
 #entire-container {
     display: flex;
     flex-direction: column;
@@ -42,8 +46,8 @@ body, html {
 }
 
 #logo {
-    max-height: 100%;
-    max-width: 100%;
+    margin:15px auto;
+    display: block; 
 }
 
 #athlete-image-container {
@@ -115,7 +119,40 @@ input[type="submit"] {
     border:none; 
 }
 
+.desktop-image {
+    display: none;
+}
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    #entire-container {
+        width: 50%;
+ 
+    }
+
+    #athlete-image-container {
+        display: none;
+    }
+
+    .content-section {
+        text-align: left;
+    }
+
+    .logo-container {
+        justify-content: flex-start; /* Align logo container to the left */
+        margin: 0;
+    }
+
+    #logo {
+        margin: 30px 20px 100px; /* Reset the margin for the logo */
+    }
+
+    .desktop-image {
+        display: block;
+        width: 50%;
     
+    }
+
+
 }
